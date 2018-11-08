@@ -17,7 +17,7 @@
 
   <body>
     <!-- START HERE -->
-    <nav class="navbar navbar-expand-md navbar-light fixed-top py-4">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top py-2">
       <div class="container">
         <a href="#home" class="navbar-brand">
           <img
@@ -27,7 +27,10 @@
             class="img img-fluid"
             alt=""
           />
-          <h3 class="d-inline align-middle">Digital Realty Tool Checkout</h3>
+          <h3 class="d-inline align-middle">
+            <span id="title" class="text-primary">Digital Realty</span>
+            <span id="subtitle" class="text-secondary">Tool Checkout</span>
+          </h3>
         </a>
         <button
           class="navbar-toggler"
@@ -81,37 +84,41 @@
           </div>
         </div>
         <div class="col-8">
-          <h2>Station Attendant:</h2>
+          <h2>
+            <i class="fas fa-exclamation-triangle text-warning"></i>Station
+            Attendant:
+          </h2>
           <h5>
             Please make sure item on screen matches that of item taken/returned
           </h5>
-          <div class="input-group col my-3">
-            <label for="itemCode">Item Code: </label>
+          <div class="input-group col my-3 rounded">
+            <label for="itemCode" class="mr-1">Item Code: </label>
             <input
               type="text"
               class="form-control rounded mr-5 "
               placeholder="Item Code"
             />
-            <label for="jobNumber">Job Number: </label>
+            <label for="jobNumber" class="mr-1">Job Number: </label>
             <input
               type="text"
               class="form-control rounded mr-5 "
               placeholder="Job Number"
             />
           </div>
-          <div class="input-group col my-3">
-            <label for="techName">Tech Name: </label>
+          <div class="input-group col my-3 r">
+            <label for="techName" class="mr-1">Tech Name: </label>
             <input
               type="text"
               class="form-control rounded mr-5"
               placeholder="Tech Name"
             />
-            <label for="stationOperator">Station Operator: </label>
+            <label for="stationOperator" class="mr-1">Station Operator: </label>
             <input
               type="text"
-              class="form-control rounded mr-5 "
+              class="form-control rounded  mr-5 "
               placeholder="Station Operator"
             />
+            <br />
             <div class="float-right">
               <button class="btn btn-secondary my-2" type="submit">
                 Submit
@@ -119,8 +126,10 @@
             </div>
           </div>
 
-          <div class="records">
-            <table class="table table-sm table-hover table-striped">
+          <div class="records table-area">
+            <table
+              class="table table-sm table-hover table-striped responsive-table"
+            >
               <thead>
                 <tr>
                   <th>Log #</th>
