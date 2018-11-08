@@ -13,5 +13,38 @@ body {
   font-size: 1.1rem; }
 
 .records {
-  height: 475px;
-  overflow-y: scroll; }
+  height: 475px; }
+
+.header-fixed {
+  width: 100%; }
+
+.header-fixed > thead,
+.header-fixed > tbody,
+.header-fixed > thead > tr,
+.header-fixed > tbody > tr,
+.header-fixed > thead > tr > th,
+.header-fixed > tbody > tr > td {
+  word-wrap: none;
+  display: block;
+  word-break: keep-all; }
+
+.header-fixed > tbody > tr:after,
+.header-fixed > thead > tr:after {
+  content: ' ';
+  display: block;
+  visibility: hidden;
+  clear: both;
+  word-break: keep-all;
+  word-wrap: none; }
+
+.header-fixed > tbody {
+  overflow-y: auto;
+  height: 200px;
+  word-wrap: none; }
+
+.header-fixed > tbody > tr > td,
+.header-fixed > thead > tr > th {
+  width: 12%;
+  float: left;
+  word-wrap: none;
+  word-break: keep-all; }

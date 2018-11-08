@@ -85,7 +85,7 @@
         </div>
         <div class="col-8">
           <h2>
-            <i class="fas fa-exclamation-triangle text-warning"></i>Station
+            <i class="fas fa-exclamation-triangle text-primary "></i>Station
             Attendant:
           </h2>
           <h5>
@@ -128,120 +128,221 @@
 
           <div class="records table-area">
             <table
-              class="table table-sm table-hover table-striped responsive-table"
+              class="table table-sm table-hover table-striped responsive-table header-fixed"
             >
               <thead>
                 <tr>
-                  <th>Log #</th>
+                  <th>#</th>
                   <th>Date</th>
                   <th>Time</th>
-                  <th>Job Number</th>
-                  <th>Tech Name</th>
+                  <th>Job #</th>
+                  <th>Technician</th>
                   <th>Item Code</th>
-                  <th>Checkout or Returning?</th>
-                  <th>Station Operator</th>
+                  <th>Status</th>
+                  <th>Operator</th>
                 </tr>
               </thead>
+          
               <tbody>
                 <tr>
-                  <th scope="row">1</th>
-                  <td>11/08/2018</td>
-                  <td>4:46 AM</td>
-                  <td>523523</td>
-                  <td>Ulric Todman</td>
-                  <td>JDSU-123</td>
-                  <td>Checkout</td>
-                  <td>Top Flight Security</td>
+                  <td scope="row" class="filterable-cell font-weight-bold">1</th>
+                  <td class="filterable-cell">11/08/2018</td>
+                  <td class="filterable-cell">4:46 AM</td>
+                  <td class="filterable-cell">523523</td>
+                  <td class="filterable-cell">Ulric Todman</td>
+                  <td class="filterable-cell">JDSU-123</td>
+                  <td class="filterable-cell">Checking it Out</td>
+                  <td class="filterable-cell">Top Flight Security</td>
                 </tr>
                 <tr>
-                  <th scope="row">2</th>
-                  <td>11/08/2018</td>
-                  <td>5:46 AM</td>
-                  <td>523245</td>
-                  <td>Sam Benejam</td>
-                  <td>EXFO-800</td>
-                  <td>Checkout</td>
-                  <td>Allied Barton</td>
+                  <td scope="row" class="filterable-cell font-weight-bold">2</th>
+                  <td class="filterable-cell">11/08/2018</td>
+                  <td class="filterable-cell">5:46 AM</td>
+                  <td class="filterable-cell">523245</td>
+                  <td class="filterable-cell">Sam Benejam</td>
+                  <td class="filterable-cell">EXFO-800</td>
+                  <td class="filterable-cell">Checking it Out</td>
+                  <td class="filterable-cell">Allied Barton</td>
                 </tr>
                 <tr>
-                  <th scope="row">3</th>
-                  <td>11/08/2018</td>
-                  <td>4:46 AM</td>
-                  <td>239523</td>
-                  <td>Louis A</td>
-                  <td>T-Berd-2310</td>
-                  <td>Checkout</td>
-                  <td>Top Flight Security</td>
+                  <td scope="row" class="filterable-cell font-weight-bold">3</th>
+                  <td class="filterable-cell">11/08/2018</td>
+                  <td class="filterable-cell">4:46 AM</td>
+                  <td class="filterable-cell">239523</td>
+                  <td class="filterable-cell">Louis A</td>
+                  <td class="filterable-cell">T-Berd-2310</td>
+                  <td class="filterable-cell">Checking it Out</td>
+                  <td class="filterable-cell">Top Flight Security</td>
                 </tr>
                 <tr>
-                  <th scope="row">4</th>
-                  <td>11/08/2018</td>
-                  <td>4:46 AM</td>
-                  <td>723523</td>
-                  <td>Ulric Todman</td>
-                  <td>NOYES OFI</td>
-                  <td>Checkout</td>
-                  <td>S/O Steve</td>
+                  <td scope="row" class="filterable-cell font-weight-bold">4</td>
+                  <td class="filterable-cell">11/08/2018</td>
+                  <td class="filterable-cell">4:46 AM</td>
+                  <td class="filterable-cell">723523</td>
+                  <td class="filterable-cell">Ulric Todman</td>
+                  <td class="filterable-cell">NOYES OFI</td>
+                  <td class="filterable-cell">Checking it Out</td>
+                  <td class="filterable-cell">S/O Steve</td>
                 </tr>
                 <tr>
-                  <th scope="row">5</th>
-                  <td>11/08/2018</td>
-                  <td>4:46 AM</td>
-                  <td>823523</td>
-                  <td>Ulric Todman</td>
-                  <td>Light Meter</td>
-                  <td>Checkout</td>
-                  <td>S/O John</td>
+                  <td scope="row" class="filterable-cell font-weight-bold">5</th>
+                  <td class="filterable-cell">11/08/2018</td>
+                  <td class="filterable-cell">4:46 AM</td>
+                  <td class="filterable-cell">823523</td>
+                  <td class="filterable-cell">Ulric Todman</td>
+                  <td class="filterable-cell">Light Meter</td>
+                  <td class="filterable-cell">Checking it Out</td>
+                  <td class="filterable-cell">S/O John</td>
                 </tr>
                 <tr>
-                  <th scope="row">6</th>
-                  <td>11/08/2018</td>
-                  <td>4:46 AM</td>
-                  <td>660523</td>
-                  <td>Nicholas Coxall</td>
-                  <td>Viavi-OTDR</td>
-                  <td>Checkout</td>
-                  <td>S/O Chris</td>
+                  <td scope="row" class="filterable-cell font-weight-bold">6</th>
+                  <td class="filterable-cell">11/08/2018</td>
+                  <td class="filterable-cell">4:46 AM</td>
+                  <td class="filterable-cell">660523</td>
+                  <td class="filterable-cell">Nicholas Coxall</td>
+                  <td class="filterable-cell">Viavi-OTDR</td>
+                  <td class="filterable-cell">Checking it Out</td>
+                  <td class="filterable-cell">S/O Chris</td>
                 </tr>
                 <tr>
-                  <th scope="row">7</th>
-                  <td>11/08/2018</td>
-                  <td>4:46 AM</td>
-                  <td>660523</td>
-                  <td>Nicholas Coxall</td>
-                  <td>Viavi-OTDR</td>
-                  <td>Checkout</td>
-                  <td>S/O Chris</td>
+                  <td scope="row" class="filterable-cell font-weight-bold">7</th>
+                  <td class="filtabler-cell">11/08/2018</td>
+                  <td class="filtabler-cell">4:46 AM</td>
+                  <td class="filtabler-cell">660523</td>
+                  <td class="filtabler-cell">Nicholas Coxall</td>
+                  <td class="filtabler-cell">Viavi-OTDR</td>
+                  <td class="filtabler-cell">Checking it Out</td>
+                  <td class="filtabler-cell">S/O Chris</td>
                 </tr>
                 <tr>
-                  <th scope="row">8</th>
-                  <td>11/08/2018</td>
-                  <td>4:46 AM</td>
-                  <td>660523</td>
-                  <td>Nicholas Coxall</td>
-                  <td>Viavi-OTDR</td>
-                  <td>Checkout</td>
-                  <td>S/O Chris</td>
+                  <td scope="row" class="filterable-cell font-weight-bold">8</th>
+                  <td class="filterable-cell">11/08/2018</td>
+                  <td class="filterable-cell">4:46 AM</td>
+                  <td class="filterable-cell">660523</td>
+                  <td class="filterable-cell">Nicholas Coxall</td>
+                  <td class="filterable-cell">Viavi-OTDR</td>
+                  <td class="filterable-cell">Checking it Out</td>
+                  <td class="filterable-cell">S/O Chris</td>
                 </tr>
                 <tr>
-                  <th scope="row">9</th>
-                  <td>11/08/2018</td>
-                  <td>4:46 AM</td>
-                  <td>660523</td>
-                  <td>Nicholas Coxall</td>
-                  <td>Viavi-OTDR</td>
-                  <td>Checkout</td>
-                  <td>S/O Chris</td>
+                  <td scope="row" class="filterable-cell font-weight-bold">9</th>
+                  <td class=filiterable-cell>11/08/2018</td>
+                  <td class=filiterable-cell>4:46 AM</td>
+                  <td class=filiterable-cell>660523</td>
+                  <td class=filiterable-cell>Nicholas Coxall</td>
+                  <td class=filiterable-cell>Viavi-OTDR</td>
+                  <td class=filiterable-cell>Checking it Out</td>
+                  <td class=filiterable-cell>S/O Chris</td>
                 </tr>
                 <tr>
-                  <th scope="row">10</th>
-                  <td>11/08/2018</td>
-                  <td>4:46 AM</td>
-                  <td>660523</td>
-                  <td>Nicholas Coxall</td>
-                  <td>Viavi-OTDR</td>
-                  <td>Checkout</td>
-                  <td>S/O Chris</td>
+                  <td scope="row" class="filterable-cell font-weight-bold">10</th>
+                  <td class="filterable-cell">11/08/2018</tdfi>
+                  <td class="filterable-cell">4:46 AM</td>
+                  <td class="filterable-cell">660523</td>
+                  <td class="filterable-cell">Nicholas Coxall</td>
+                  <td class="filterable-cell">Viavi-OTDR</td>
+                  <td class="filterable-cell">Checking it Out</td>
+                  <td class="filterable-cell">S/O Chris</td>
+                </tr>
+                <tr>
+                  <td scope="row" class="filterable-cell font-weight-bold">11</th>
+                  <td class="filterable-cell">11/08/2018</tdfi>
+                  <td class="filterable-cell">4:46 AM</td>
+                  <td class="filterable-cell">660523</td>
+                  <td class="filterable-cell">Nicholas Coxall</td>
+                  <td class="filterable-cell">Viavi-OTDR</td>
+                  <td class="filterable-cell">Checking it Out</td>
+                  <td class="filterable-cell">S/O Chris</td>
+                </tr>
+                <tr>
+                  <td scope="row" class="filterable-cell font-weight-bold">12</th>
+                  <td class="filterable-cell">11/08/2018</tdfi>
+                  <td class="filterable-cell">4:46 AM</td>
+                  <td class="filterable-cell">660523</td>
+                  <td class="filterable-cell">Nicholas Coxall</td>
+                  <td class="filterable-cell">Viavi-OTDR</td>
+                  <td class="filterable-cell">Checking it Out</td>
+                  <td class="filterable-cell">S/O Chris</td>
+                </tr>
+                <tr>
+                  <td scope="row" class="filterable-cell font-weight-bold">13</th>
+                  <td class="filterable-cell">11/08/2018</tdfi>
+                  <td class="filterable-cell">4:46 AM</td>
+                  <td class="filterable-cell">660523</td>
+                  <td class="filterable-cell">Nicholas Coxall</td>
+                  <td class="filterable-cell">Viavi-OTDR</td>
+                  <td class="filterable-cell">Checking it Out</td>
+                  <td class="filterable-cell">S/O Chris</td>
+                </tr>
+                <tr>
+                  <td scope="row" class="filterable-cell font-weight-bold">14</th>
+                  <td class="filterable-cell">11/08/2018</tdfi>
+                  <td class="filterable-cell">4:46 AM</td>
+                  <td class="filterable-cell">660523</td>
+                  <td class="filterable-cell">Nicholas Coxall</td>
+                  <td class="filterable-cell">Viavi-OTDR</td>
+                  <td class="filterable-cell">Checking it Out</td>
+                  <td class="filterable-cell">S/O Chris</td>
+                </tr>
+                <tr>
+                  <td scope="row" class="filterable-cell font-weight-bold">15</th>
+                  <td class="filterable-cell">11/08/2018</tdfi>
+                  <td class="filterable-cell">4:46 AM</td>
+                  <td class="filterable-cell">660523</td>
+                  <td class="filterable-cell">Nicholas Coxall</td>
+                  <td class="filterable-cell">Viavi-OTDR</td>
+                  <td class="filterable-cell">Checking it Out</td>
+                  <td class="filterable-cell">S/O Chris</td>
+                </tr>
+                <tr>
+                  <td scope="row" class="filterable-cell font-weight-bold">16</th>
+                  <td class="filterable-cell">11/08/2018</tdfi>
+                  <td class="filterable-cell">4:46 AM</td>
+                  <td class="filterable-cell">660523</td>
+                  <td class="filterable-cell">Nicholas Coxall</td>
+                  <td class="filterable-cell">Viavi-OTDR</td>
+                  <td class="filterable-cell">Checking it Out</td>
+                  <td class="filterable-cell">S/O Chris</td>
+                </tr>
+                <tr>
+                  <td scope="row" class="filterable-cell font-weight-bold">17</th>
+                  <td class="filterable-cell">11/08/2018</tdfi>
+                  <td class="filterable-cell">4:46 AM</td>
+                  <td class="filterable-cell">660523</td>
+                  <td class="filterable-cell">Nicholas Coxall</td>
+                  <td class="filterable-cell">Viavi-OTDR</td>
+                  <td class="filterable-cell">Checking it Out</td>
+                  <td class="filterable-cell">S/O Chris</td>
+                </tr>
+                <tr>
+                  <td scope="row" class="filterable-cell font-weight-bold">18</th>
+                  <td class="filterable-cell">11/08/2018</tdfi>
+                  <td class="filterable-cell">4:46 AM</td>
+                  <td class="filterable-cell">660523</td>
+                  <td class="filterable-cell">Nicholas Coxall</td>
+                  <td class="filterable-cell">Viavi-OTDR</td>
+                  <td class="filterable-cell">Checking it Out</td>
+                  <td class="filterable-cell">S/O Chris</td>
+                </tr>
+                <tr>
+                  <td scope="row" class="filterable-cell font-weight-bold">19</th>
+                  <td class="filterable-cell">11/08/2018</tdfi>
+                  <td class="filterable-cell">4:46 AM</td>
+                  <td class="filterable-cell">660523</td>
+                  <td class="filterable-cell">Nicholas Coxall</td>
+                  <td class="filterable-cell">Viavi-OTDR</td>
+                  <td class="filterable-cell">Checking it Out</td>
+                  <td class="filterable-cell">S/O Chris</td>
+                </tr>
+                <tr>
+                  <td scope="row" class="filterable-cell font-weight-bold">20</th>
+                  <td class="filterable-cell">11/08/2018</tdfi>
+                  <td class="filterable-cell">4:46 AM</td>
+                  <td class="filterable-cell">660523</td>
+                  <td class="filterable-cell">Nicholas Coxall</td>
+                  <td class="filterable-cell">Viavi-OTDR</td>
+                  <td class="filterable-cell">Checking it Out</td>
+                  <td class="filterable-cell">S/O Chris</td>
                 </tr>
               </tbody>
             </table>
